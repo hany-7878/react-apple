@@ -1,0 +1,76 @@
+/* YouTube Videos Container Styling */
+.youtube-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .youtube-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout for Videos */
+  .videos-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Video Card Styling */
+  .video-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .video-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .video-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0;
+  }
+  
+  .video-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .video-card small {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .videos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .videos-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
